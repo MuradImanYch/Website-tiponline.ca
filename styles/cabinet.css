@@ -1,0 +1,1690 @@
+/*-----Mobile first-------*/
+/*-----Header-------*/
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background: #fff;
+    top: 0;
+    opacity: 0.95;
+}
+header * {
+    font-family: 'Inter', sans-serif;
+}
+nav {
+    width: 100%;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+nav ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+nav ul li {
+    color: #00448F;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav .menuBars {
+    display: none;
+}
+.logoWrap {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.logoWrap span {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #3B97F4;
+    margin: 0 0 0 2px;
+    line-height: 24px;
+}
+.logoWrap a {
+    display: flex;
+    align-items: center;
+}
+nav {
+    position: relative;
+}
+nav .mobNavWrap {
+    width: 100%;
+    height: 300px;
+    background: #fff;
+    position: absolute;
+    top: 69px;
+    z-index: 2;
+    display: none;
+}
+nav .mobNavWrap .mobUl {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+nav .mobNavWrap .mobUl li {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+}
+nav ul {
+    display: none;
+}
+nav .userBarWrap {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 0 5px;
+}
+nav .userBarWrap .userImgName {
+    display: flex;
+    align-items: center;
+    width: 85px;
+    justify-content: space-between;
+    margin: 0 20px 0 0;
+}
+nav .userBarWrap .logoutWrap {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    justify-content: space-between;
+}
+nav .userBarWrap span {
+    font-weight: 700;
+    color: #00448F;
+    cursor: pointer;
+    font-size: 0.875em;
+    padding: 0 0 0 5px;
+    line-height: 19.36px;
+}
+nav .userBarWrap button {
+    width: 90px;
+    height: 38.5px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #67C8FF;
+    color: #fff;
+    font-size: 0.875em;
+}
+nav .menuBars {
+    width: 40px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+nav .menuBars .bar1, nav .menuBars .bar2, nav .menuBars .bar3 {
+    position: absolute;
+}
+nav .menuBars .bar2 {
+    top: 12px;
+}
+nav .menuBars .bar3 {
+    top: 24px;
+}
+nav .menuBars div {
+    background-color: #00448F;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+}
+nav .menuBars div:last-child {
+    width: 20.62px;
+}
+
+/*-------Main-------*/
+main .container {
+    width: 94%;
+    min-height: 100vh;
+    margin: 100px auto 0 auto;
+}
+main .container .col1 {
+    min-height: 220px;
+}
+main .container .col2 {
+    min-height: 680px;
+    margin: 60px 0 0 0;
+}
+main .container .col1 .navBar {
+    width: 94%;
+    min-height: 62px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    position: fixed;
+    top: 69px;
+    background: #fff;
+}
+main .container .col1 .navBar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 62px;
+    padding: 0 15px;
+}
+main .container .col1 .navBar ul li {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    color: #B3D9FF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+main .container .col1 .navBar ul li * {
+    margin: 0 3px;
+}
+main ul li svg {
+    width: 20px;
+    height: 20px;
+}
+main .container .col1 .refLinkWrap {
+    width: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    min-height: 152px;
+    margin: 145px 0 0 0;
+    padding: 10px 0 0 0;
+}
+main .container .col1 .refLinkWrap .title {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0 0 10px;
+    flex-direction: column;
+    align-items: center;
+}
+main .container .col1 .refLinkWrap .title p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 19px;
+    color: #4198F1;
+    width: 100%;
+    text-align: center;
+}
+main .container .col1 .refLinkWrap .title input {
+    height: 41px;
+    background: #F1F1F1;
+    border-radius: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+}
+main .container .col1 .refLinkWrap .title input:focus {
+    color: red;
+}
+main .container .col1 .refLinkWrap .title .refLinkChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+main .container .col1 .refLinkWrap .title img {
+    width: 23px;
+    cursor: pointer;
+    margin: 0 0 0 10px;
+}
+main .container .col1 .refLinkWrap .bonusLinkWrap {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    flex-direction: column;
+    align-items: center;
+}
+main .container .col1 .refLinkWrap .bonusLinkWrap p {
+    width: 100%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 17px;
+    color: #00448F;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+main .container .col1 .refLinkWrap .bonusLinkWrap ul li {
+    margin: 10px 0 0 0;
+}
+main .container .col1 .refLinkWrap .bonusLinkWrap ul li a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4198F1;
+}
+main .container .col2 .service .switchBtnWrap {
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+main .container .col2 .service .switchBtnWrap button {
+    height: 100%;
+    width: 190px;
+    border: none;
+    cursor: pointer;
+}
+main .container .col2 .service .switchBtnWrap button:first-child {
+    background: #4198F1;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 16px 16px 0px 0px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+main .container .col2 .service .switchBtnWrap button:last-child {
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 16px 16px 0px 0px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #3B97F4;
+    margin: 0 0 0 20px;
+}
+main .container .col2 .service .container {
+    width: 100%;
+    margin: 0 auto 30px auto;
+    min-height: 100%;
+    padding: 20px 0 20px 0;
+    background: #FFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 0px 16px 16px 16px;
+}
+.tarifs {
+    padding: 10px 20px;
+}
+main .container .col2 .service .container .individualWrap {
+    width: 100%;
+    height: 160px;
+    background: #3A97F4;
+    border-radius: 16px;  
+    display: flex; 
+    justify-content: space-between;
+    padding: 0 5px;
+}
+main .container .col2 .service .container .individualWrap .col1 {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30%;
+    justify-content: space-around;
+    margin: 0 0 0 10px;
+    padding: 10px 0;
+}
+main .container .col2 .service .container .individualWrap .col1 p {
+    text-align: center;
+    line-height: 1.2;
+}
+main .container .col2 .service .container .individualWrap .col1 p:nth-child(1) {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}
+#depText {
+    font-size: 0.8em;
+    text-align: center;
+}
+main .container .col2 .service .container .individualWrap .col1 p:nth-child(2) {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+main .container .col2 .service .container .individualWrap .col1 p:nth-child(3) {
+    font-family: 'Inter', sans-serif;
+    width: 50%;
+    font-size: 0.8em;
+}
+main .container .col2 .service .container .individualWrap .col1 p:nth-child(4) {
+    font-family: 'Inter', sans-serif;
+    width: 50%;
+    font-size: 0.8em;
+}
+main .container .col2 .service .container .individualWrap .col2 {
+    margin: 0 0 0 40px;
+    min-height: 100%;
+}
+main .container .col2 .service .container .individualWrap .col2 ul li {
+    font-size: 0.9em;
+    margin: 10px auto 0 auto;
+    width: 90%;
+    list-style-image: url('/img/check.svg');
+    line-height: 1.2;
+}
+main .container .col2 .service .container .individualWrap .col3 {
+    min-width: 30%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .container .col2 .service .container .individualWrap .col3 button {
+    border: none;
+    background: #fff;
+    border-radius: 18px;
+    width: 95px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #3B97F4;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+.integration {
+    width: 100%;
+    min-height: 220px;
+    margin: 30px 0 0 0;
+}
+.integration h3 {
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #00448F;
+}
+.integrationChild {
+    width: 100%;
+    height: 100%;
+}
+.integrationChild .itemCol1 {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.integrationChild .itemCol2 {
+    width: 100%;
+    min-height: 120px;
+}
+.integrationChild .itemCol1 .item {
+    width: 100%;
+    height: 100px;
+    background: #F2F2F2;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+.integrationChild .itemCol1 .item:first-child {
+    margin: -20px 0 0 0;
+}
+.integrationChild .itemCol2 .item {
+    width: 100%;
+    height: 100px;
+    background: #F2F2F2;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+.integrationChild .itemCol1 .item .itemChild {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+.integrationChild .itemCol1 .item .itemChild .right {
+    margin: 0 0 0 20px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.integrationChild .itemCol2 .item .itemChild .right {
+    margin: 0 0 0 20px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.integrationChild .itemCol1 .item .itemChild .right p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2F67A4;
+}
+.integrationChild .itemCol2 .item .itemChild .right p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2F67A4;
+}
+.integrationChild .itemCol1 .item .itemChild .right button {
+    width: 90px;
+    height: 26.87px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+    color: #3A97F4;
+    cursor: pointer;
+}
+.integrationChild .itemCol2 .item .itemChild .right button {
+    width: 90px;
+    height: 26.87px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+    color: #3A97F4;
+    cursor: pointer;
+}
+.integrationChild .itemCol1 .item .itemChild .img {
+    width: 60px;
+    height: 60px;
+    background: #EE9FC4;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.integrationChild .itemCol1 .item:nth-child(2) .itemChild .img {
+    background: #3A97F4;
+}
+.integrationChild .itemCol2 .item .itemChild {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+.integrationChild .itemCol2 .item .itemChild .img {
+    width: 60px;
+    height: 60px;
+    background: #9F97F2;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information {
+    width: 100%;
+    padding: 0 0 40px 0;
+}
+.information .forms {
+    width: 100%;
+    min-height: 500px;
+    margin: 0 0 0 0;
+}
+.information .forms .col {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.information .forms .col .inputWrap {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.information .forms .col .inputWrap input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    background: #FAFAFA;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid #BCBCBC;
+    margin: 5px 0 0 0;
+    padding: 0 0 0 10px;
+}
+.information .forms .col .inputWrap select {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    background: #FAFAFA;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid #BCBCBC;
+    margin: 5px 0 0 0;
+    padding: 0 0 0 10px;
+}
+.information .forms .col .inputWrap .input {
+    width: 90%;
+    height: 100%;
+}
+.information .forms .col .inputWrap label {
+    padding: 0 0 0 5px;
+    color: #000F44;
+    font-size: 14px;
+}
+.information .forms .col .inputWrap label span {
+    color: red;
+    padding: 0 0 0 5px;
+}
+.information .notice {
+    padding: 0 10px;
+    margin: 25px 0 0 0;
+}
+.information .notice p {
+    color: #000;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+}
+.information .notice span {
+    color: red;
+}
+.information button {
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 28.4px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 19px;
+    background: #3B97F4;
+    -webkit-box-shadow: #3B97F4 0px 5.28623px 18.5018px rgb(59 151 244 / 52%);
+    box-shadow: #6db6ff 0px 5.28623px 18.5018px;
+    cursor: pointer;
+}
+.information button:hover {
+    box-shadow: #3B97F4 0px 0.28623px 0.5018px;
+    transition: 0.4s;
+}
+.information .saveBtnWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 0 0;
+}
+.information h4 {
+    color: #3B97F4;
+    margin: 30px 0 10px 2px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.information .forms .col:last-child .inputWrap h4 {
+    margin: 20px 0 0 0;
+    padding: 0 0 10px 18px;
+    width: 100%;
+}
+
+.workers {
+    display: none;
+}
+.workers .addBtnWrap {
+    background: #FAFAFA;
+    height: 66px;
+    width: 90%;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9.16456px;
+}
+.workers .addBtnWrap .addBtnChildWrap {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.workers .addBtnWrap .addBtnChildWrap span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3B97F4;
+}
+.workers p {
+    text-align: center;
+    margin: 25px 0 0 0;
+    font-weight: bold;
+    color: #000;
+}
+.workers .employeesList img {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.workers .employeesList img:hover {
+    opacity: 1;
+}
+.workers .employeesList svg {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.workers .employeesList svg:hover {
+    opacity: 1;
+}
+
+.addWorkerPopupWrap {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    overflow: auto;
+    display: none; 
+}
+.addWorkerPopupWrap .addWorkerContent {
+    width: 97%;
+    min-height: 500px;
+    background: #fff;
+    border-radius: 23px;
+    margin: 90px auto;
+    position: relative;
+    box-shadow: 0px 0px 58px #e2ebf1;
+    padding: 52px 59px;
+}
+.addWorkerPopupWrap .addWorkerContent .closeBtn {
+    font-size: 29px;
+    font-weight: 700;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 23px;
+    color: gray;
+}
+.addWorkerPopupWrap .addWorkerContent p {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 53px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #000F44;
+}
+.addWorkerPopupWrap .addWorkerContent .formWrap form input {
+    border: 1px solid #000;
+    background: #FAFAFA;
+    border-radius: 10px;
+    outline: none;
+    height: 58px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+    margin: 5px 0 20px 0;
+}
+.addWorkerPopupWrap .addWorkerContent .formWrap form label {
+    line-height: 19px;
+    color: #000F44;
+    font-size: 0.95em;
+}
+.addWorkerPopupWrap .addWorkerContent .formWrap form button {
+    font-family: 'Inter', sans-serif;
+    border: none;
+    background: #3B97F4;
+    font-weight: bold;
+    font-size: 18.9441px;
+    line-height: 23px;
+    color: #FFFFFF;
+    width: 180px;
+    margin: 0 auto;
+    height: 48px;
+    border-radius: 28.4px;
+    cursor: pointer;
+    box-shadow: 0px 5px 18px rgb(59 151 244 / 52%);
+}
+.addWorkerPopupWrap .addWorkerContent .formWrap form button:hover {
+    background: #399cff;
+}
+.addWorkerPopupWrap .addWorkerContent .formWrap form span {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 30px;
+    text-align: center;
+    cursor: pointer;
+}    
+.addWorkerPopupWrap .addWorkerContent .formWrap form span a {
+    color: #3B97F4;
+}
+.addWorkerPopupWrap .addWorkerContent .formWrap form {
+    display: flex;
+    flex-direction: column;
+}
+.addWorkerPopupWrap .addWorkerContent .formWrap form input {
+    border: 1px solid #BCBCBC;
+}
+footer {
+    width: 100%;
+    min-height: 302px;
+    background-color: #D2EFFF;
+}
+footer .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0 0;
+}
+footer .container .col1 .socNetWrap {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 42px 0 0 0;
+}
+footer .container .col1 .socNetWrap img {
+    cursor: pointer;
+}
+footer .container .col2 {
+    min-height: 200px;
+}
+footer .container .col2 ul li {
+    margin: 10px 0 0 0;
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+footer .container .col3 a {
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.75em;
+    text-decoration: underline;
+}
+footer .container .col3 .mailWrap span {
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.75em;
+    margin: 0 0 0 6px;
+}
+footer .container .col3 .mailWrap {
+    margin: 15px 0 0 0;
+    min-width: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.balance {
+    display: none;
+    width: 100%;
+    padding: 25px 0 0 0;
+}
+.balance .balanceContainer {
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.balance .balanceContainer p {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #A7A9AC;
+}
+.balance .balanceContainer button {
+    background: #3B97F4;
+    -webkit-box-shadow: 0px 3.50916px 12.2821px rgb(59 151 244 / 52%);
+    box-shadow: 0px 3.50916px 12.2821px rgb(59 151 244 / 52%);
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 18.8528px;
+    border: none;
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+}
+.balance .balanceContainer button:hover {
+    background: #46a2ff;
+}
+.sendMoneyPopupWrap {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    overflow: auto;
+    display: none; 
+}
+.sendMoneyPopupWrap .sendMoneyContent {
+    width: 97%;
+    min-height: 500px;
+    background: #fff;
+    border-radius: 23px;
+    margin: 90px auto;
+    position: relative;
+    box-shadow: 0px 0px 58px #e2ebf1;
+    padding: 52px 59px;
+}
+.sendMoneyPopupWrap .sendMoneyContent .closeBtn {
+    font-size: 29px;
+    font-weight: 700;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 23px;
+    color: gray;
+}
+.sendMoneyPopupWrap .sendMoneyContent p {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 53px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #000F44;
+}
+.sendMoneyPopupWrap .sendMoneyContent .formWrap form input {
+    border: 1px solid #000;
+    background: #FAFAFA;
+    border-radius: 10px;
+    outline: none;
+    height: 58px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+    margin: 5px 0 20px 0;
+}
+.sendMoneyPopupWrap .sendMoneyContent .formWrap form label {
+    line-height: 19px;
+    color: #000F44;
+    font-size: 0.95em;
+}
+.sendMoneyPopupWrap .sendMoneyContent .formWrap form button {
+    font-family: 'Inter', sans-serif;
+    border: none;
+    background: #3B97F4;
+    font-weight: bold;
+    font-size: 18.9441px;
+    line-height: 23px;
+    color: #FFFFFF;
+    width: 180px;
+    margin: 0 auto;
+    height: 48px;
+    border-radius: 28.4px;
+    cursor: pointer;
+    box-shadow: 0px 5px 18px rgb(59 151 244 / 52%);
+}
+.sendMoneyPopupWrap .sendMoneyContent .formWrap form button:hover {
+    background: #399cff;
+}
+.sendMoneyPopupWrap .sendMoneyContent .formWrap form .scanQrBtn {
+    background: #fff;
+    color: #399cff;
+    width: 100px;
+    height: 40px;
+    margin: 0 0 20px 55%;
+    font-size: 13px;
+}
+.sendMoneyPopupWrap .sendMoneyContent .formWrap form .scanQrBtn:hover {
+    background-color: #fff;
+}
+.sendMoneyPopupWrap .sendMoneyContent .formWrap form span {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 30px;
+    text-align: center;
+    cursor: pointer;
+}    
+.sendMoneyPopupWrap .sendMoneyContent .formWrap form span a {
+    color: #3B97F4;
+}
+.sendMoneyPopupWrap .sendMoneyContent .formWrap form {
+    display: flex;
+    flex-direction: column;
+}
+.sendMoneyPopupWrap .sendMoneyContent .formWrap form input {
+    border: 1px solid #BCBCBC;
+}
+
+.workersEditPopupWrap {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    overflow: auto;
+    display: none; 
+}
+.workersEditPopupWrap .workersEditContent {
+    width: 97%;
+    min-height: 500px;
+    background: #fff;
+    border-radius: 23px;
+    margin: 90px auto;
+    position: relative;
+    box-shadow: 0px 0px 58px #e2ebf1;
+    padding: 52px 59px;
+}
+.workersEditPopupWrap .workersEditContent .closeBtn {
+    font-size: 29px;
+    font-weight: 700;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 23px;
+    color: gray;
+}
+.workersEditPopupWrap .workersEditContent p {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 53px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #000F44;
+}
+.workersEditPopupWrap .workersEditContent .formWrap form input {
+    border: 1px solid #000;
+    background: #FAFAFA;
+    border-radius: 10px;
+    outline: none;
+    height: 58px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+    margin: 5px 0 20px 0;
+}
+.workersEditPopupWrap .workersEditContent .formWrap form label {
+    line-height: 19px;
+    color: #000F44;
+    font-size: 0.95em;
+}
+.workersEditPopupWrap .workersEditContent .formWrap form button {
+    font-family: 'Inter', sans-serif;
+    border: none;
+    background: #3B97F4;
+    font-weight: bold;
+    font-size: 18.9441px;
+    line-height: 23px;
+    color: #FFFFFF;
+    width: 180px;
+    margin: 0 auto;
+    height: 48px;
+    border-radius: 28.4px;
+    cursor: pointer;
+    box-shadow: 0px 5px 18px rgb(59 151 244 / 52%);
+}
+.workersEditPopupWrap .workersEditContent .formWrap form button:hover {
+    background: #399cff;
+}
+.workersEditPopupWrap .workersEditContent .formWrap form .scanQrBtn {
+    background: #fff;
+    color: #399cff;
+    width: 100px;
+    height: 40px;
+    margin: 0 0 20px 55%;
+    font-size: 13px;
+}
+.workersEditPopupWrap .workersEditContent .formWrap form .scanQrBtn:hover {
+    background-color: #fff;
+}
+.workersEditPopupWrap .workersEditContent .formWrap form span {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 30px;
+    text-align: center;
+    cursor: pointer;
+}    
+.workersEditPopupWrap .workersEditContent .formWrap form span a {
+    color: #3B97F4;
+}
+.workersEditPopupWrap .workersEditContent .formWrap form {
+    display: flex;
+    flex-direction: column;
+}
+.workersEditPopupWrap .workersEditContent .formWrap form input {
+    border: 1px solid #BCBCBC;
+}
+.workers .employeesList {
+    width: 90%;
+    background: #FAFAFA;
+    border-radius: 9.16456px;
+    padding: 1px 24px 19px 24px;
+    margin: 20px auto;
+    min-height: 120px;
+}
+.workers .employeesList p {
+    font-weight: bold;
+    font-size: 18.3291px;
+    line-height: 22px;
+    color: #000F44;
+    text-align: left;
+}
+.workers .employeesList .info {
+    width: 90%;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.workers .employeesList .info span {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #3B97F4;
+}
+.workers .employeesList .info img {
+    width: 30px;
+}
+.workers .employeesList .info .editDel {
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+.workers .employeesList p:last-child {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #BDBDBD;
+    margin: 2px 0 0 0;
+}
+.balance .balanceContainer .balanceCount span {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #3B97F4;
+}
+.balance .hystory {
+    margin: 40px auto 0 auto;
+    width: 90%;
+}
+.balance .hystory .item {
+    width: 100%;
+    height: 50px;
+    background: #F8F8F8;
+    margin: 6px 0 0 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.balance .hystory .itemComment {
+    width: 100%;
+    height: 40px;
+    background: #F8F8F8;
+    margin: 6px 0 0 0;
+    border-radius: 8px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.balance .hystory .itemComment p {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.balance .hystory .leftSide {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.balance .hystory .rightSide {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.balance .hystory .leftSide p, .balance .hystory .leftSide .dollarSymb {
+    color: #FF7F6E;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+}
+.balance .hystory .item .arrow {
+    color: #000;
+    font-weight: bold;
+    padding: 0 5px 0 0;
+}
+.balance .hystory .rightSide .date {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #A7A9AC;
+}
+.footerUpd {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.footerUpd .col2 {
+    margin: auto;
+}
+footer .container .col3 {
+    padding: 6px 0 0 0;
+}
+
+.individualWrapUpd {
+    display: flex;
+}
+.individualWrapUpd .col2 ul {
+    height: 100%;
+}   
+
+/*-----Desctop-------*/
+@media (min-width: 1024px) {
+    /*----Header & nav-----*/
+    nav {
+        height: 85px;
+    }
+    nav ul {
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+        width: 600px;
+    }
+    nav ul li {
+        color: #00448F;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    nav .menuBars {
+        display: none;
+    }
+    nav .userBarWrap .userImgName {
+        width: 100px;
+    }
+
+    /*------Main-------*/
+    main .container { 
+        margin: 150px auto 0 auto;
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+    }
+    main .container .col1 {
+        width: 400px;
+    }
+    main .container .col2 {
+        width: 80%;
+        margin: 0;
+    }
+    main .container .col1 .navBar {
+        min-height: 204px;
+        width: 300px;
+        position: static;
+    }
+    main .container .col1 .navBar ul {
+        height: 204px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 20px;
+    }
+    main .container .col1 .navBar ul li {
+        font-size: 16px;
+    }
+    main .container .col1 .navBar ul li * {
+        margin: 0 10px;
+    }
+    main .container .col1 .refLinkWrap {
+        width: 300px;
+        min-height: 300px;
+        margin: 40px 0 0 0;
+    }
+    main .container .col1 .refLinkWrap .title {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    main .container .col1 .refLinkWrap .title p {
+        padding: 0 5px;
+        font-size: 18px;
+        margin: 15px 0 0 0;
+        text-align: center;
+    }
+    main .container .col1 .refLinkWrap .title input {
+        text-align: center;
+        min-width: 220px;
+    }
+    main .container .col1 .refLinkWrap .title .refLinkChild {
+        width: 100%;
+        justify-content: space-between;
+        margin: 25px 50px 0 0;
+    }
+    main .container .col1 .refLinkWrap .bonusLinkWrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .container .col1 .refLinkWrap .bonusLinkWrap p {
+        min-width: 270px;
+        text-align: center;
+        font-size: 18px;
+    }
+    main .container .col1 .refLinkWrap .bonusLinkWrap ul li {
+        text-align: center;
+    }
+    main .container .col2 .service .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    main .container .col2 .service .container .individualWrap {
+        width: 680px;
+    }
+    main .container .col2 .service .container .individualWrap .col1 {
+        text-align: center;
+    }
+    main .container .col2 .service .container .individualWrap .col1 p {
+        line-height: 1.2;
+    }
+    main .container .col2 .service .container .individualWrap .col2 ul {
+        margin: 30px 0 0 0;
+    }
+    main .container .col2 .service .container .individualWrap .col1 p:nth-child(1), main .container .col2 .service .container .individualWrap .col1 p:nth-child(2) {
+       font-weight: 700;
+    }
+    .integration h3 {
+        font-size: 24px;
+    }
+    .integrationChild .itemCol2 {
+        padding: 0;
+    }
+    .integrationChild .itemCol1 {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 25px 0 0 0;
+        min-height: 150px;
+    }
+    .integrationChild .itemCol1 .item {
+        width: 45%;
+        margin: 0 0 0 20px;
+    }
+    .integrationChild .itemCol2 .item {
+        width: 45%;
+    }
+    .integrationChild .itemCol1 .item:first-child {
+        margin: 0;
+    }
+    .integration {
+        margin: 60px 0 0 0;
+    }
+
+    .information {
+        padding: 0 0 20px 0;
+    }
+    .information .forms {
+        margin: 0 auto 0 auto;
+        width: 660px;
+    }
+    .information .forms .col {
+        min-height: 80px;
+        display: flex;
+        flex-direction: row;
+    }
+    .information .forms .col .inputWrap input {
+        max-width: 320px;
+        margin: 0;
+    }
+    .information .forms .col:last-child .inputWrap h4 {
+        margin: 17px 0 0 0px;
+        padding: 0 0 10px 0px;
+    }
+    .information .forms .col .inputWrap label {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 0 3px 5px;
+    }
+    .information .forms .col .inputWrap .input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .information .forms .col .inputWrap select { 
+        width: 320px;
+    }
+    .information .forms .col .inputWrap {
+        width: 390px;
+        margin: auto;
+    }
+    .information .forms .col:last-child .inputWrap .input {
+        align-items: flex-start;
+        width: 100%;
+    }
+    .information .forms .col:last-child .inputWrap {
+        width: 330px;
+    }
+    .information .notice { 
+        margin: 40px 0 0 0;
+    }
+    .information h4 {
+        color: #3B97F4;
+        margin: 25px 0 10px 2px;
+    }
+
+    .workers .addBtnWrap { 
+        width: 600px;
+    }
+
+    .addWorkerPopupWrap .addWorkerContent {
+        width: 500px;
+        min-height: 500px;
+    }
+    .sendMoneyPopupWrap .sendMoneyContent {
+        width: 500px;
+        min-height: 500px;
+    }
+    .workersEditPopupWrap .workersEditContent {
+        width: 500px;
+        min-height: 500px;
+    }
+    footer .container {
+        justify-content: space-around;
+    }
+    .balance .balanceContainer {
+        max-width: 90%;
+    }
+    .balance .balanceContainer button {
+        width: 120px;
+    }   
+    .sendMoneyPopupWrap .sendMoneyContent .formWrap form .scanQrBtn { 
+        margin: 0 0 20px 75%;
+    }
+    .individualWrap ul {
+        width: 200px;
+    }
+    .individualWrapUpd {
+        width: 100%;
+    }
+    main .container .col2 .service .container .individualWrap .col1 {
+        min-width: 200px;
+    }
+    main .container .col2 .service .container .individualWrap .col2 { 
+        padding: 10px 290px 0 0;
+        margin: 0;
+    }
+    main .container .col2 .service .container .individualWrap .col3 {
+        margin: 0 0 0 -430px;
+    }
+    main .container .col2 .service .container .individualWrap .col1 p {
+        min-width: 100%;
+    }
+    .workers .employeesList {
+        width: 100%;
+    }
+    .workers .employeesList .info {
+        width: 100%;
+    }
+    main .container .col2 .service .switchBtnWrap button {
+        height: 100%;
+        width: 140px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+/*----I Pad >= 768-------*/
+@media (min-width: 768px) {
+    main .container .col1 .navBar ul li {
+        font-size: 16px;
+    }
+    main ul li svg {
+        width: 30px;
+        height: 30px;
+    }
+    main .container .col1 .refLinkWrap .title p {
+        width: 100%;
+    }
+    main .container .col1 .refLinkChild {
+        margin: -10px 0 0 0;
+    }
+    main .container .col1 .refLinkWrap { 
+        padding: 0 40px;
+    }
+    main .container .col2 .service .container .individualWrap .col2 ul {
+        margin: 10px 0 0 80px;
+    }
+    main .container .col2 .service .container .individualWrap .col1 {
+        margin: 0 0 0 10px;
+    }
+    .integration {
+        margin: 50px auto;
+    }
+    nav .userBarWrap {
+        width: 400px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav .userBarWrap .userImgName {
+        margin: 0 50px 0 0;
+    }
+    nav .userBarWrap .logoutWrap {
+        margin: 0 10px 0 0;
+    }
+}
+
+@media (max-width: 410px) { 
+    main .container .col2 .service .switchBtnWrap {
+        display: flex;
+    }
+    main .container .col2 .service .switchBtnWrap button {
+        height: 100%;
+        width: 140px;
+        border: none;
+        cursor: pointer;
+    }
+    main .container .col2 .service .switchBtnWrap button:last-child {
+        margin: 0 0 0 10px;
+    }
+}
+
+@media (max-width: 375px) { 
+    .individualWrap {
+        flex-direction: column;
+    }
+    .individualWrap .col1 {
+        color: red;
+        font-size: 12px;
+    }
+    .individualWrap .col2 ul {
+        width: 64px;
+        margin: 0 0 0 20px;
+    }
+    .individualWrap .col2 {
+        color: red;
+        font-size: 12px;
+    }
+    footer .container {
+        padding: 50px 0 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container .col2 {
+        margin: 40px 0 0 0;
+    }
+    main .container .col1 .navBar ul li { 
+        font-size: 11px;
+    }
+    .footerUpd {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .footerUpd .col1 {
+        margin: -50px 0 0 0;
+    }
+    footer .container .col3 {
+        padding: 0;
+    }
+    nav .userBarWrap .userImgName img {
+        width: 18px;
+        font-size: 0.8em;
+        margin-left: 10px;
+    }
+    nav .userBarWrap .logoutWrap img {
+        width: 50px;
+        height: 20px;
+        font-size: 0.8em;
+    }
+    nav .userBarWrap span {
+        font-size: 0.7em;
+        padding: 0 6px 0 0;
+        margin-left: 5px;
+    }
+    nav .userBarWrap .logoutWrap {
+        width: 75px;
+    }
+    main .container .col2 .service .container .individualWrap .col1 {
+        text-align: center;
+        min-width: 120px;
+    }
+    main .container .col2 .service .container .individualWrap .col1 p{
+        min-width: 100%;
+    }
+    .individualWrap .col2 ul {
+        width: 90%;
+        text-align: center;
+    }
+    .per10 {
+        display: flex;
+        width: 65px;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+    }
+    #depText {
+        font-size: 0.8em;
+    }
+    main .container .col2 .service .container .individualWrap .col3 {
+        min-height: auto;
+        padding: 0 0 8px 0;
+    }
+    main .container .col2 .service .container .individualWrap {
+        height: 160px;
+        padding: 0 10px;
+    }
+}
+
+/*----280px or less, galaxy fold, iPhone 5/SE etc-------*/
+@media (max-width: 320px) {
+    nav .logoWrap a img {
+        height: 20px;
+    }
+    nav .logoWrap a span {
+        font-size: 0.8em;
+    }
+    nav .userBarWrap .userImgName img {
+        width: 18px;
+        font-size: 0.8em;
+        margin-left: 0;
+    }
+    nav .userBarWrap .logoutWrap img {
+        width: 50px;
+        height: 20px;
+        font-size: 0.8em;
+    }
+    nav .userBarWrap span {
+        font-size: 0.7em;
+        padding: 0 6px 0 0;
+    }
+    nav .userBarWrap .userImgName {
+        margin: 0;
+    }
+    nav .userBarWrap span {
+        margin: 0 0 0 5px;
+    }
+
+    /*------Main------*/
+    main .container .col1 .navBar ul {
+        height: 40px;
+    }
+    main .container .col1 .navBar ul li {
+        font-weight: 600;
+        font-size: 8px;
+    }
+    main ul li svg {
+        width: 15px;
+        height: 15px;
+    }
+    main .container .col1 .navBar ul li * {
+        margin: 0 3px;
+    }
+    main .container .col1 .refLinkWrap .title p {
+        font-size: 14px;
+    }
+    main .container .col1 .refLinkWrap .bonusLinkWrap ul li a, main .container .col1 .refLinkWrap .bonusLinkWrap p {
+        font-size: 11px;
+    }
+    .balance .balanceContainer button {
+        width: 50px;
+        height: 30px;
+    }
+    main .container .col1 .navBar { 
+        min-height: 40px;
+    }
+    main .container .col1 .refLinkWrap { 
+        margin: 125px 0 0 0;
+    }
+
+    .information .forms .col:last-child .inputWrap h4 {
+        margin: 20px 0 0 0px;
+        width: 100%;
+        padding: 0 0 10px 15px;
+    }
+    main .container .col2 .service .container .individualWrap .col1 {
+        min-width: 100px;
+    }
+    .individualWrap .col2 ul {
+        margin: 0;
+    }
+    main .container .col2 .service .container .individualWrap .col2 ul li {
+        line-height: 1.2;
+    }
+    main .container .col2 .service .container .individualWrap {
+        height: 160px;
+    }
+}
+
+@media (max-width: 300px) {
+    main .container .col2 .service .container .individualWrap {
+        height: 200px;
+    }
+}

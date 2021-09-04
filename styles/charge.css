@@ -1,0 +1,399 @@
+/*-----Mobile first-------*/
+/*-----Header-------*/
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background: #fff;
+    top: 0;
+    opacity: 0.95;
+}
+header * {
+    font-family: 'Inter', sans-serif;
+}
+nav {
+    width: 100%;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+nav ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+nav ul li {
+    color: #00448F;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav .menuBars {
+    display: none;
+}
+.logoWrap {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.logoWrap span {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #3B97F4;
+    margin: 0 0 0 2px;
+    line-height: 24px;
+}
+.logoWrap a {
+    display: flex;
+    align-items: center;
+}
+nav {
+    position: relative;
+}
+nav .mobNavWrap {
+    width: 100%;
+    height: 300px;
+    background: #fff;
+    position: absolute;
+    top: 69px;
+    z-index: 2;
+    display: none;
+}
+nav .mobNavWrap .mobUl {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+nav .mobNavWrap .mobUl li {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+}
+nav ul {
+    display: none;
+}
+nav .userBarWrap {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 0 5px;
+}
+nav .userBarWrap .userImgName {
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: space-between;
+}
+nav .userBarWrap .logoutWrap {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    justify-content: space-between;
+}
+nav .userBarWrap span {
+    font-weight: 700;
+    color: #00448F;
+    cursor: pointer;
+    font-size: 0.875em;
+    padding: 0 0 0 5px;
+    line-height: 19.36px;
+}
+nav .userBarWrap button {
+    width: 90px;
+    height: 38.5px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #67C8FF;
+    color: #fff;
+    font-size: 0.875em;
+}
+nav .menuBars {
+    width: 40px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+nav .menuBars .bar1, nav .menuBars .bar2, nav .menuBars .bar3 {
+    position: absolute;
+}
+nav .menuBars .bar2 {
+    top: 12px;
+}
+nav .menuBars .bar3 {
+    top: 24px;
+}
+nav .menuBars div {
+    background-color: #00448F;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+}
+nav .menuBars div:last-child {
+    width: 20.62px;
+}
+
+/*------main-------*/
+main .container {
+    width: 100%;
+    height: 50vh;
+    padding: 80px 0 0 0;
+}
+main .container .topupBalance {
+    min-height: 400px;
+    width: 90%;
+    margin: auto;
+}
+main .container .topupBalance form {
+    width: 100%;
+    min-height: 260px;
+    box-shadow: 0px 0px 0px 0.5px rgb(50 50 93 / 10%), 0px 2px 5px 0px rgb(50 50 93 / 10%), 0px 1px 1.5px 0px rgb(0 0 0 / 7%);
+    border-radius: 7px;
+    padding: 40px;
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .container .topupBalance form .inputWrap {
+    width: 85%;
+    height: 100%;
+}
+main .container .topupBalance form label {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000F44;
+}
+main .container .topupBalance form button {
+    width: 100%;
+    height: 60px;
+    background: #3B97F4;
+    -webkit-box-shadow: 0px 3.50916px 12.2821px rgb(59 151 244 / 52%);
+    box-shadow: 0px 3.50916px 12.2821px rgb(59 151 244 / 52%);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 18.8528px;
+    margin: 10px 0 0 0;
+    border: none;
+    cursor: pointer;
+}
+main .container .topupBalance form input {
+    width: 100%;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #32325d;
+    font-size: 17px;
+    border: 1px solid rgba(50, 50, 93, 0.1);
+    outline: none;
+}
+main .container .topupBalance h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #3B97F4;
+}
+
+/*-------Footer---------*/
+footer {
+    width: 100%;
+    min-height: 302px;
+    background-color: #D2EFFF;
+    margin: 120px 0 0 0;
+}
+footer .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0 0;
+}
+footer .container .col1 .socNetWrap {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 42px 0 0 0;
+}
+footer .container .col1 .socNetWrap img {
+    cursor: pointer;
+}
+footer .container .col2 {
+    min-height: 200px;
+}
+footer .container .col2 ul li {
+    margin: 10px 0 0 0;
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+footer .container .col3 a {
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.75em;
+    text-decoration: underline;
+}
+footer .container .col3 .mailWrap span {
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.75em;
+    margin: 0 0 0 6px;
+}
+footer .container .col3 .mailWrap {
+    margin: 15px 0 0 0;
+    min-width: 130px;
+    display: flex;
+    align-items: center;
+}
+.footerUpd {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.footerUpd .col2 {
+    margin: auto;
+}
+footer .container .col3 {
+    padding: 6px 0 0 0;
+}
+
+/*-----Desctop-------*/
+@media (min-width: 1024px) {
+    /*----Header & nav-----*/
+    nav {
+        height: 85px;
+    }
+    nav ul {
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+        width: 600px;
+    }
+    nav ul li {
+        color: #00448F;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    nav .menuBars {
+        display: none;
+    }
+    /*------main-------*/
+    main .container {
+        height: 80vh;
+        padding: 95px 0 0 0;
+    }
+    main .container .topupBalance form {
+        width: 500px;
+        margin: 50px auto;
+    }
+    /*-------Footer---------*/
+    footer .container {
+        justify-content: space-around;
+    }
+    footer {
+        margin: 0;
+    }
+}
+
+/*-------I Pad <= 768px-------*/
+@media (min-width: 768px) {
+    footer {
+        margin: 230px 0 0 0;
+    }
+}
+
+/*-----<375px----*/
+@media (max-width: 375px) {
+    footer .container {
+        padding: 50px 0 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container .col2 {
+        margin: 40px 0 0 0;
+    }
+    .footerUpd {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .footerUpd .col1 {
+        margin: -50px 0 0 0;
+    }
+
+    nav .userBarWrap .userImgName img {
+        width: 18px;
+        font-size: 0.8em;
+    }
+    nav .userBarWrap span {
+        font-size: 0.7em;
+    }
+    nav .userBarWrap .logoutWrap img {
+        width: 20px;
+    }
+    nav .userBarWrap .logoutWrap {
+        width: 65px;
+    }
+    footer .container .col3 {
+        padding: 0;
+    }
+}
+
+/*----I Pad >= 768-------*/
+@media (min-width: 768px) {
+    nav .userBarWrap {
+        width: 400px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav .userBarWrap .userImgName {
+        margin: 0 30px 0 0;
+    }
+    nav .userBarWrap .logoutWrap {
+        margin: 0 10px 0 0;
+    }
+}
+
+/*----280px or less, galaxy fold, iPhone 5/SE etc-------*/
+@media (max-width: 320px) {
+    nav .logoWrap a img {
+        height: 20px;
+    }
+    nav .logoWrap a span {
+        font-size: 0.8em;
+    }
+    nav .userBarWrap .userImgName img {
+        width: 18px;
+        font-size: 0.8em;
+    }
+    nav .userBarWrap .logoutWrap img {
+        width: 50px;
+        height: 20px;
+        font-size: 0.8em;
+    }
+    nav .userBarWrap span {
+        font-size: 0.7em;
+    }
+    nav .userBarWrap span {
+        margin: 0 10px 0 0;
+    }
+}

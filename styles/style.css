@@ -1,0 +1,1589 @@
+@font-face {
+    font-family: "Sf Pro Display Black";
+    src: url("/fonts/SFProDisplay-Black.woff2") format("woff2"),
+           url("/fonts/SFProDisplay-Black.woff") format("woff");
+   }
+   html {
+       scroll-behavior: smooth;
+   }
+/*-------Mobile first------*/
+/*------Header & nav------*/
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background: #fff;
+    top: 0;
+    opacity: 0.95;
+}
+header * {
+    font-family: 'Inter', sans-serif;
+}
+nav {
+    width: 100%;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+nav ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+nav ul li {
+    color: #00448F;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav .menuBars {
+    display: none;
+}
+.logoWrap {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.logoWrap span {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #3B97F4;
+    margin: 0 0 0 2px;
+    line-height: 24px;
+}
+.logoWrap a {
+    display: flex;
+    align-items: center;
+}
+nav {
+    position: relative;
+}
+nav .mobNavWrap {
+    width: 100%;
+    height: 300px;
+    background: #fff;
+    position: absolute;
+    top: 69px;
+    z-index: 2;
+    display: none;
+}
+nav .mobNavWrap .mobUl {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+nav .mobNavWrap .mobUl li {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+}
+nav ul {
+    display: none;
+}
+nav .logReqWrap {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .logReqWrap span {
+    font-weight: 700;
+    color: #00448F;
+    cursor: pointer;
+    font-size: 0.875em;
+}
+nav .logReqWrap button {
+    width: 90px;
+    height: 38.5px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #67C8FF;
+    color: #fff;
+    font-size: 0.875em;
+}
+nav .menuBars {
+    width: 40px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+nav .menuBars .bar1, nav .menuBars .bar2, nav .menuBars .bar3 {
+    position: absolute;
+}
+nav .menuBars .bar2 {
+    top: 12px;
+}
+nav .menuBars .bar3 {
+    top: 24px;
+}
+nav .menuBars div {
+    background-color: #00448F;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+}
+nav .menuBars div:last-child {
+    width: 20.62px;
+}
+.promo {
+    height: 100%;
+    position: relative;
+    margin: 85px 0 0 0;
+}
+.promo .promoCover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0 0 0 20px;
+}
+.promo .promoCover .itemsWrap {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.promo .promoCover .itemsWrap h1 {
+    font-weight: 700;
+    font-size: 1.8em;
+    line-height: 1.6;
+}
+.promo .promoCover .itemsWrap p {
+    font-weight: 700;
+    font-size: 1em;
+}
+.promo .promoCover .itemsWrap button {
+    border: none;
+    background-color: #67C8FF;
+    width: 130px;
+    height: 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+}
+
+/*-----Main------*/
+main .about {
+    min-height: auto;
+    padding: 4px;
+    margin: 80px 0 0 0;
+}
+main .about .container {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+main .about .container img {
+    width: 177px;
+    height: 175px;
+}
+main .about .container article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 0 0 8px;
+}
+main .about .container article p {
+    font-weight: 400;
+    font-size: 0.875em;
+    color: #222222;
+    font-family: 'Inter', sans-serif;
+}
+main .about .container article p:last-child {
+    margin: 10px 0 0 0;
+}
+main .about .container article .paragraphWrap {
+    line-height: 1.4;
+}
+main .about .container article h2 {
+    color: #00448F;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0 0 20px 0;
+    font-family: Sf Pro Display Black;
+    font-size: 1.75em;
+}
+main .howItWorks {
+    width: 100%;
+    min-height: auto;
+    padding: 60px 0 0 0;
+}
+main .howItWorks .container {
+    width: 100%;
+    padding: 0 1px;
+}
+main .howItWorks .container .step1 {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+main .howItWorks .container .step2 {
+    margin: 70px 0 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+main .howItWorks .container .step3 {
+    margin: 70px 0 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 0 60px 0;
+}
+main .howItWorks .container h2 {
+    font-weight: 700;
+    font-size: 1.75em;
+    color: #00448F;
+    text-align: center;
+    font-family: Sf Pro Display Black;
+}
+main .howItWorks .container .step1 .leftSide, main .howItWorks .container .step2 .leftSide, main .howItWorks .container .step3 .leftSide {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .howItWorks .container .step1 .leftSide img, main .howItWorks .container .step3 .leftSide img {
+    width: 50% - 100px;
+    height: 230px;
+}
+main .howItWorks .container .step2 .leftSide img {
+    height: 250px;
+}
+main .howItWorks .container .step1 article, main .howItWorks .container .step2 article, main .howItWorks .container .step3 article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 50px 0;
+}
+main .howItWorks .container .step1 article *, main .howItWorks .container .step2 article *, main .howItWorks .container .step3 article * {
+    margin: 10px 0 0 0;
+}
+main .howItWorks .container .step1 article h3, main .howItWorks .container .step2 article h3, main .howItWorks .container .step3 article h3 {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #4F4F4F;
+    font-family: 'Inter', sans-serif;
+}
+main .howItWorks .container .step1 article p:nth-child(2), main .howItWorks .container .step2 article p:nth-child(2), main .howItWorks .container .step3 article p:nth-child(2) {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #3B97F4;
+    font-family: 'Inter', sans-serif;
+}
+main .howItWorks .container .step1 article p:nth-child(3), main .howItWorks .container .step2 article p:nth-child(3), main .howItWorks .container .step3 article p:nth-child(3) {
+    font-weight: 500;
+    font-size: 1em;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+}
+main .grayWrap {
+    background-color: #F3F3F3;
+    padding: 0 0 50px 0;
+}
+main .price {
+    min-height: 500px;
+    width: 100%;
+    padding: 70px 0 0 0;
+    margin: 0 0 100px 0;
+}
+main .price h2 {
+    display: flex;
+    justify-content: center;
+    font-family: Sf Pro Display Black;
+    font-weight: 700;
+    font-size: 1.75em;
+    color: #00448F;
+}
+main .price .priceItemsWrap {
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 5px 0 5px;
+    flex-direction: column;
+    align-items: center;
+}
+main .price .priceItemsWrap .row1 h3 {
+    font-weight: 700;
+    font-size: 1.375em;
+    font-family: 'Inter', sans-serif;
+    color: #00448F;
+}
+main .price .priceItemsWrap .row1 ul {
+    padding: 15px 0 0 30px;
+}
+main .price .priceItemsWrap .row1 ul li {
+    list-style-image: url('../img/star.svg');
+    margin: 10px 0 0 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125em;
+    font-weight: 600;
+    color: #3A97F4;
+    line-height: 22px;
+}
+main .price .priceItemsWrap .row1 {
+    width: 100%;
+    height: 263px;
+    padding: 0 0 0 10px;
+    order: 2;
+    margin: 70px 0 0 0;
+}
+main .price .priceItemsWrap .row2 {
+    display: flex;
+    justify-content: center;
+    order: 1;
+}
+main .price .priceItemsWrap .row2 .individualWrap {
+    width: 318px;
+    height: 478px;
+    background-color: #3A97F4;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.2), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+main .price .priceItemsWrap .row2 .individualWrap .top {
+    background-color: #6AB1F9;
+    width: 100%;
+    height: 43px;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+main .price .priceItemsWrap .row2 .individualWrap .container {
+    width: 100%;
+    min-height: 75%;
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+main .price .priceItemsWrap .row2 .individualWrap .container p:nth-child(1) {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+}
+main .price .priceItemsWrap .row2 .individualWrap .container p:nth-child(2) {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.125em;
+    width: auto;
+    line-height: 21.5px;
+    padding: 0 0 0 15px;
+    text-align: center;
+}
+main .price .priceItemsWrap .row2 .individualWrap .container ul {
+    padding: 0 0 0 40px;
+    width: 250px;
+}
+main .price .priceItemsWrap .row2 .individualWrap .container ul li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.125em;
+    margin: 10px 0 0 0;
+    list-style-image: url('../img/check.svg');
+    line-height: 25px;
+}
+main .price .priceItemsWrap .row2 .individualWrap .container button {
+    border: none;
+    width: 168px;
+    height: 42px;
+    background-color: #fff;
+    color: #3A97F4;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.125em;
+    border-radius: 50px;
+    cursor: pointer;
+}
+main .price .priceItemsWrap .row3 h3 {
+    font-weight: 700;
+    font-size: 1.375em;
+    font-family: 'Inter', sans-serif;
+    color: #00448F;
+}
+main .price .priceItemsWrap .row3 ul {
+    padding: 15px 0 0 30px;
+}
+main .price .priceItemsWrap .row3 ul li {
+    list-style-image: url('../img/star.svg');
+    margin: 10px 0 0 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125em;
+    font-weight: 600;
+    color: #3A97F4;
+    line-height: 22px;
+}
+main .price .priceItemsWrap .row3 {
+    width: 100%;
+    height: 263px;
+    padding: 0 0 0 10px;
+    margin: 60px 0 0 0;
+    order: 3;
+}
+main .howToConnect {
+    width: 100%;
+    min-height: 450px;
+    margin: -30px 0 0 0;
+}
+main .howToConnect h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "Sf Pro Display Black";
+    font-weight: 700;
+    font-size: 1.75em;
+    color: #00448F  ;
+}
+main .howToConnect .cartWrap {
+    width: 100%;
+    min-height: 252px;
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+main .howToConnect .cartWrap .cart {
+    width: 94%;
+    min-height: 255px;
+    background: #fff;
+    border-radius: 16px;
+    margin: 35px 0 0 0;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main .howToConnect .cartWrap .cart .title {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+main .howToConnect .cartWrap .cart:nth-child(1) .title .titleImg {
+    height: 54px;
+    width: 54px;
+    background-color: #9F97F2;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .howToConnect .cartWrap .cart:nth-child(2) .title .titleImg {
+    height: 54px;
+    width: 54px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EE9FC4;
+}
+main .howToConnect .cartWrap .cart:nth-child(3) .title .titleImg {
+    height: 54px;
+    width: 54px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3A97F4;
+}
+main .howToConnect .cartWrap .cart .title .titleText {
+    margin: 0 0 0 15px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25em;
+    color: #2F67A4;
+}
+main .howToConnect .cartWrap .cart p {
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.875em;
+    height: auto;
+    line-height: 17px;
+    margin: 10px 0;
+}
+main .howToConnect .cartWrap .cart button {
+    background-color: #67C8FF;
+    border: none;
+    width: 127px;
+    height: 36px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+main .howToConnect .cartWrap .cart button img {
+    margin: 0 0 0 6px;
+}
+main .info {
+    min-height: 330px;
+    width: 100%;
+    background-color: #3A97F4;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 50px 0;
+}
+main .info .col1 {
+    width: 100%;
+    min-height: 300px;
+    padding: 30px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+main .info .col2 {
+    width: 100%;
+    min-height: 200px;
+    padding: 0 10px 0 20px;
+}
+main .info .col1 h4 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+main .info .col1 p:nth-child(2) {
+    font-size: 1.25em;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    line-height: 25px;
+}
+main .info .col1 p:nth-child(3) {
+    font-size: 1.125em;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    line-height: 25px;
+    margin: -10px 0 0 0;
+}
+main .info .col1 button {
+    width: 122px;
+    height: 34px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875em;
+    font-weight: 700;
+    color: #00448F;
+    cursor: pointer;
+}
+main .info .col2 h4 {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25em;
+}
+main .info .col2 p:nth-child(2) {
+    margin: 40px 0 0 0;
+}
+main .info .col2 p:nth-child(3) {
+    margin: 20px 0 0 0;
+}
+main .info .col2 p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.875em;
+    width: 100%;
+    line-height: 17px;
+}
+main .reviews {
+    width: 100%;
+    min-height: 1000px;
+    padding: 80px 0 50px 0;
+    overflow: hidden;
+}
+main .reviews .sliderWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 650px;
+    position: relative;
+}
+main .reviews h2 {
+    display: flex;
+    justify-content: center;
+    font-family: SF Pro Display Black;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #00448F;
+}
+main .reviews .container {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+}
+main .reviews .container .cart {
+    width: 94%;
+    min-height: 200px;
+    background: #FAFAFA;
+    border-radius: 16px;
+    margin: 20px 0 0 0;
+    padding: 20px 30px;
+}
+main .reviews .count {
+    display: flex;
+    justify-content: flex-end;
+    padding: 35px 25px 0 0;
+}
+main .reviews .count span {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #3A97F4;
+    padding: 0 10px;
+}
+main .reviews .count .countChild {
+    font-weight: 700;
+    font-size: 22px;
+}
+main .reviews .count img {
+    width: 20px;
+    cursor: pointer;
+}
+main .reviews .count img:first-child {
+    transform: rotate(-180deg);
+}
+main .reviews .cart .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+main .reviews .cart .title span {
+    margin: 0 0 0 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #00448F;
+}
+main .reviews .cart p {
+    color: #000;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 20px 0 0 0;
+}
+main .reviews .container:nth-child(1) {
+    left: 0;
+}
+main .reviews .container:nth-child(2) {
+    left: 100%;
+}
+main .reviews .container:nth-child(3) {
+    left: 200%;
+}
+main .reviews .container:nth-child(4) {
+    left: 300%;
+}
+main .reviews .container:nth-child(5) {
+    left: 400%;
+}
+main .reviews .container:nth-child(6) {
+    left: 500%;
+}
+main .reviews .container:nth-child(7) {
+    left: 600%;
+}
+main .reviews .container:nth-child(8) {
+    left: 700%;
+}
+main .reviews .container:nth-child(9) {
+    left: 800%;
+}
+main .reviews .container:nth-child(10) {
+    left: 900%;
+}
+main .reviews .container:nth-child(11) {
+    left: 1000%;
+}
+main .reviews .container:nth-child(12) {
+    left: 1100%;
+}
+main .faq {
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 60px 0;
+    margin: -60px 0 0 0;
+}
+main .faq h2 {
+    font-family: Sf Pro Display Black;
+    font-weight: 700;
+    font-size: 1.75em;
+    color: #00448F;
+}
+main .faq .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 0;
+}
+main .faq .container .col1, main .faq .container .col2 {
+    width: 100%;
+    min-height: auto;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+main .faq .container .items {
+    width: 94%;
+    min-height: auto;
+    background: #FAFAFA;
+    margin: 20px auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    padding: 20px 10px 30px 20px;
+}
+main .faq .container .items .textImg p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125em;
+    line-height: 22px;
+    color: #000;
+    width: 93%;
+}
+main .faq .container .items .textImg {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
+main .faq .container .items .textImg span {
+    display: block;
+}
+main .faq .container .items .textImg img {
+    width: 24px;
+    height: 24px;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+}
+main .faq .container .items .textImg p span {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin: 8px 0 0 0;
+}
+
+/*-------Footer---------*/
+footer {
+    width: 100%;
+    min-height: 302px;
+    background-color: #D2EFFF;
+}
+footer .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0 0;
+}
+footer .container .col1 .socNetWrap {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 42px 0 0 0;
+}
+footer .container .col1 .socNetWrap img {
+    cursor: pointer;
+}
+footer .container .col2 {
+    min-height: 200px;
+}
+footer .container .col2 ul li {
+    margin: 10px 0 0 0;
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+footer .container .col3 {
+    padding: 6px 0 0 0;
+}
+footer .container .col3 a {
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.75em;
+    text-decoration: underline;
+}
+footer .container .col3 .mailWrap span {
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.75em;
+    margin: 0 0 0 6px;
+}
+footer .container .col3 .mailWrap {
+    margin: 15px 0 0 0;
+    min-width: 130px;
+    display: flex;
+    align-items: center;
+}
+.loginPopupWrap, .signupPopupWrap {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    overflow: auto;
+    display: none;
+}
+.loginPopupWrap .loginContent {
+    width: 97%;
+    height: 500px;
+    background: #fff;
+    border-radius: 23px;
+    margin: 90px auto;
+    position: relative;
+    box-shadow: 0px 0px 58px #e2ebf1;
+    padding: 52px 59px;
+}
+.signupPopupWrap .signupContent {
+    width: 97%;
+    height: 650px;
+    background: #fff;
+    border-radius: 23px;
+    margin: 90px auto;
+    position: relative;
+    box-shadow: 0px 0px 58px #e2ebf1;
+    padding: 52px 59px;
+}
+.loginPopupWrap .loginContent .closeBtn, .signupPopupWrap .signupContent .closeBtn {
+    font-size: 29px;
+    font-weight: 700;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 23px;
+    color: gray;
+}
+.loginPopupWrap .loginContent p, .signupPopupWrap .signupContent p {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 53px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #000F44;
+}
+.loginPopupWrap .loginContent .formWrap form input, .signupPopupWrap .signupContent .formWrap form input {
+    border: 1px solid #000;
+    background: #FAFAFA;
+    border-radius: 10px;
+    outline: none;
+    height: 58px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+    margin: 5px 0 20px 0;
+}
+.loginPopupWrap .loginContent .formWrap form label, .signupPopupWrap .signupContent .formWrap form label {
+    line-height: 19px;
+    color: #000F44;
+    font-size: 0.95em;
+}
+.loginPopupWrap .loginContent .formWrap form button, .signupPopupWrap .signupContent .formWrap form button {
+    font-family: 'Inter', sans-serif;
+    border: none;
+    background: #3B97F4;
+    font-weight: bold;
+    font-size: 18.9441px;
+    line-height: 23px;
+    color: #FFFFFF;
+    width: 180px;
+    margin: 0 auto;
+    height: 48px;
+    border-radius: 28.4px;
+    cursor: pointer;
+    box-shadow: 0px 5px 18px rgb(59 151 244 / 52%);
+}
+.loginPopupWrap .loginContent .formWrap form button:hover, .signupPopupWrap .signupContent .formWrap form button:hover {
+    background: #399cff;
+}
+.loginPopupWrap .loginContent .formWrap form span {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 30px;
+    text-align: center;
+    cursor: pointer;
+}    
+.loginPopupWrap .loginContent .formWrap form span {
+    color: #3B97F4;
+}
+.loginPopupWrap .loginContent .formWrap form, .signupPopupWrap .signupContent .formWrap form {
+    display: flex;
+    flex-direction: column;
+}
+
+.forgetPswPopupWrap {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    overflow: auto;
+    display: none;
+}
+.forgetPswPopupWrap .forgetPswContent {
+    width: 97%;
+    min-height: 100px;
+    background: #fff;
+    border-radius: 23px;
+    margin: 90px auto;
+    position: relative;
+    box-shadow: 0px 0px 58px #e2ebf1;
+    padding: 52px 50px;
+}
+.forgetPswPopupWrap .forgetPswContent .closeBtn {
+    font-size: 29px;
+    font-weight: 700;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 23px;
+    color: gray;
+}
+.forgetPswPopupWrap .forgetPswContent p {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 53px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #000F44;
+}
+.forgetPswPopupWrap .forgetPswContent .formWrap form input {
+    border: 1px solid #000;
+    background: #FAFAFA;
+    border-radius: 10px;
+    outline: none;
+    height: 58px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+    margin: 5px 0 20px 0;
+}
+.forgetPswPopupWrap .forgetPswContent .formWrap form label {
+    line-height: 19px;
+    color: #000F44;
+    font-size: 0.95em;
+    margin: 40px 0 0 0;
+}
+.forgetPswPopupWrap .forgetPswContent .formWrap form button {
+    font-family: 'Inter', sans-serif;
+    border: none;
+    background: #3B97F4;
+    font-weight: bold;
+    font-size: 18.9441px;
+    line-height: 23px;
+    color: #FFFFFF;
+    width: 180px;
+    margin: 0 auto;
+    height: 48px;
+    border-radius: 28.4px;
+    cursor: pointer;
+    box-shadow: 0px 5px 18px rgb(59 151 244 / 52%);
+}
+.forgetPswPopupWrap .forgetPswContent .formWrap form button:hover {
+    background: #399cff;
+}
+.forgetPswPopupWrap .forgetPswContent .formWrap form span {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: -10px 0 0 0;
+}    
+.forgetPswPopupWrap .forgetPswContent .formWrap form span {
+    color: #3B97F4;
+}
+.forgetPswPopupWrap .forgetPswContent .formWrap form {
+    display: flex;
+    flex-direction: column;
+}
+#video-bg {
+    position: relative;
+    margin: 0 0 0 0;
+}
+#video-bg video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+main .howItWorks .step3 .leftSide img {
+    width: 80%;
+}
+.footerUpd {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.footerUpd .col2 {
+    margin: auto;
+}
+
+
+/*-------Desctop-------*/
+@media (min-width: 1024px) {
+    #video-bg video {
+        top: 0;
+    }
+    header {
+        position: fixed;
+    }
+    /*----Header & nav-----*/
+    nav {
+        height: 85px;
+    }
+    nav ul {
+        display: flex;
+        width: 600px;
+        justify-content: space-between;
+    }
+    nav ul li {
+        color: #00448F;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    nav .menuBars {
+        display: none;
+    }
+    .promo .promoCover {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 152px;
+    }
+    .promo {
+        height: 100vh;
+    } 
+    .promo .promoCover .itemsWrap {
+        width: 100%;
+        margin: 100px 0 0 0;
+    }
+    .promo .promoCover .itemsWrap h1 {
+        width: 500px;
+        font-size: 2.75em;
+    } 
+    nav .mobNavWrap {
+        display: none
+    }
+
+    /*-------Main---------*/
+    main .about {
+        min-height: auto;
+        margin: 90px 0 0 0;
+    }
+    main .about .container {
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 0;
+        min-height: auto;
+    }
+    main .about .container img {
+        width: 384px;
+        height: 380px;
+    }
+    main .about .container article {
+        min-height: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: -40px 0 0 0;
+    }
+    main .about .container article h2 {
+        font-size: 2.375em;
+    }
+    main .howItWorks .container h2 {
+        font-size: 2.375em;
+    }
+    main .about .container article .paragraphWrap {
+        width: 600px;
+        height: auto;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    main .howItWorks .container .step1, main .howItWorks .container .step3 {
+        height: 300px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 300px;
+    }
+    main .howItWorks .container .step2 {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        padding: 0 0 0 550px;
+        margin: 0;
+    }
+    main .howItWorks .container:nth-child(2) {
+        display: flex;
+        justify-content: center;
+    }
+    main .howItWorks .container:nth-child(2) article {
+        margin: 0 200px 0 0;
+    }
+    main .howItWorks .container:nth-child(2) article h3 {
+        margin-left: -150px;
+    }
+    main .howItWorks .container:nth-child(2) article p {
+        margin-left: -150px;
+    }
+    main .howItWorks .container .step1 .leftSide, main .howItWorks .container .step2 .leftSide, main .howItWorks .container .step3 .leftSide {
+        width: 400px;
+    }
+    main .howItWorks .container .step1 article, main .howItWorks .container .step3 article {
+        align-items: flex-start;
+    }
+    main .howItWorks .container .step2 article {
+        align-items: flex-end;
+    }
+    main .howItWorks .container .step2 .leftSide img {
+        margin: 0 400px 0 0;
+    }
+    main .howItWorks .container .step1 .leftSide img, main .howItWorks .container .step3 .leftSide img {
+        width: 50% - 100px;
+        height: 230px;
+    }
+    main .price h2 {
+        font-size: 2.375em;
+    }
+    main .price .priceItemsWrap .row1 h3 {
+        font-size: 1.5em;
+    }
+    main .price .priceItemsWrap {
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 10px auto;
+        align-items: flex-start;
+    }
+    main .price .priceItemsWrap .row1 {
+        width: 402px;
+        height: 100%;
+        padding: 0;
+        order: 1;
+        padding: 0 20px 0 0;
+    }
+    main .price .priceItemsWrap .row3 h3 {
+        font-size: 1.5em;
+    }
+    main .price .priceItemsWrap .row3 {
+        width: 402px;
+        height: 100%;
+        padding: 0 0 0 20px;
+    }
+    main .price .priceItemsWrap .row2 {
+        margin: 0;
+        order: 2;
+    }
+    main .howToConnect {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 0 70px 0;
+        margin: 0;
+    }
+    main .howToConnect h2 {
+        font-size: 2.375em;
+    }
+    main .howToConnect .cartWrap {
+        justify-content: center;
+        margin: auto;
+        flex-direction: row;
+        max-width: 1200px;
+    }
+    main .howToConnect .cartWrap .cart {
+        width: 400px;
+        min-height: 255px;
+        margin: 0 15px;
+    }
+    main .info {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        max-width: 100%;
+        margin: auto;
+    }
+    main .info #infoMaxHeight {
+        display: flex;
+        max-width: 1300px;
+        justify-content: space-around;
+    }
+    main .info .col1 {
+        width: 45%;
+        min-height: 200px;
+        align-items: flex-start;
+        margin: 0 0 0 20px;
+    }
+    main .info .col2 {
+        width: 40%;
+    }
+    main .grayWrap {
+        padding: 0;
+    }
+    main .info .col1 h4 {
+        font-size: 2em;
+        justify-content: flex-start;
+    }
+    main .info .col1 p:nth-child(2) {
+        font-size: 1.75em;
+    }
+    main .info .col1 p:nth-child(3) {
+        font-size: 1.25em;
+    }
+    main .info .col2 p {
+        width: 100%;
+    }
+    main .info .col2 h4 {
+        font-size: 1.5em;
+    }
+    main .reviews { 
+        min-height: 550px;
+    }
+    main .reviews h2 {
+        font-size: 38px;
+    }
+    main .reviews .sliderWrap {
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0;
+    }
+    main .reviews .count {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 150px 10px 0;
+    }
+    main .reviews .container .cart { 
+        width: 400px;
+        margin: 0 20px;
+    }
+    main .reviews .container {
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        align-items: flex-start;
+    }
+    main .reviews .count span {
+        font-size: 22px;
+    }
+    main .reviews .count .countChild {
+        font-size: 26px;
+    }
+    main .faq {
+        padding: 0 0 80px 0;
+        margin: -80px 0 0 0;
+    }
+    main .faq .container {
+        max-width: 100%;
+        min-height: 400px;
+        flex-direction: row;
+        margin: 50px 0 0 0;
+        justify-content: space-between;
+    }
+    main .faq .container #faqMaxWidth {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    main .faq .container .col1, main .faq .container .col2 {
+        width: 650px;
+    }
+    main .faq .container .items {
+        padding: 10px 30px 30px 30px;
+    } 
+    main .faq .container .items .textImg {
+        margin: 30px 0 0 0;
+    }
+    main .faq .container .items .textImg img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /*-------Footer---------*/
+    footer .container {
+        justify-content: space-around;
+    }
+
+    .loginPopupWrap .loginContent {
+        width: 500px;
+        min-height: 500px;
+    }
+    .signupPopupWrap .signupContent {
+        width: 500px;
+        min-height: 650px;
+    }
+    .forgetPswPopupWrap .forgetPswContent {
+        width: 500px;
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 361px) {
+    main .howToConnect .cartWrap .cart {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+    .promo {
+        height: 100%;
+    }
+    main .about {
+        margin: 30px 0 0 0;
+    }
+    main .about .container img {
+        margin: 20px 0 0 0;
+    }
+    main .howToConnect {
+        margin: 150px 0 0 0;
+    }
+    footer .container {
+        padding: 50px 0 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container .col2 {
+        margin: 40px 0 0 0;
+    }
+    footer .container .col3 {
+        padding: 0;
+    }
+    .promo .promoCover {
+        height: 100%;
+    }
+    .promo .promoCover .itemsWrap {
+        height: 200px;
+        margin: 0px auto;
+    }
+    .promo .promoCover .itemsWrap h1 {
+        font-size: 1.8em;
+    }
+    .promo .promoCover .itemsWrap p {
+        font-size: 0.8em;
+    }
+    .promo .promoCover .itemsWrap button {
+        width: 130px;
+        height: 35px;
+        font-size: 1em;
+    }
+    main .about .container {
+        flex-direction: column-reverse;
+    }
+    main .about .container article h2 {
+        text-align: center;
+    }
+    main .howItWorks .container .step1 {
+        min-height: auto;
+    }
+    main .howItWorks .container .step1 article p:nth-child(3), main .howItWorks .container .step2 article p:nth-child(3), main .howItWorks .container .step3 article p:nth-child(3) {
+        text-align: center;
+    }
+    main .howItWorks .container .step1 article, main .howItWorks .container .step2 article, main .howItWorks .container .step3 article {
+        margin: 20px 0 0 0;
+    }
+    main .howItWorks .container .step1 article p:nth-child(3), main .howItWorks .container .step2 article p:nth-child(3), main .howItWorks .container .step3 article p:nth-child(3) {
+        padding: 0 0 15px 0;
+    }
+    .footerUpd {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .footerUpd .col1 {
+        margin: -50px 0 0 0;
+    }
+}
+
+/*----280px or less, galaxy fold, iPhone 5/SE etc-------*/
+@media (max-width: 320px) {
+    nav img {
+        height: 30px;
+    }
+    nav .logReqWrap button {
+        width: 70px;
+        height: 36px;
+        font-size: 0.8em;
+    }
+    nav .logReqWrap span {
+        font-size: 0.8em;
+    }
+    main .about .container article h2 {
+        font-size: 1.75em;
+    }
+
+    /*-------Main--------*/
+    main .about {
+        margin: 40px 0 0 0;
+    }
+    main .about .container img {
+        width: 100px;
+        height: 100px;
+    }
+    main .about .container article p {
+        font-size: 0.7em;
+    }
+    main .howItWorks .step1 article {
+        padding: 0 10px;
+    }
+    main .howItWorks .container .step1 .leftSide img, main .howItWorks .container .step2 .leftSide img, main .howItWorks .container .step3 .leftSide img {
+        width: 100% - 100px;
+        height: 170px;
+    }
+    main .price .priceItemsWrap .row2 .individualWrap {
+        width: 90%;
+    }
+    main .price .priceItemsWrap .row1 {
+        margin: 80px 0 0 0;
+    }
+    main .price .priceItemsWrap .row3 {
+        margin: 200px 0 0 0;
+    }
+    main .howToConnect .cartWrap .cart {
+        min-height: 330px;
+    }
+    main .howToConnect { 
+        margin: 200px 0 0 0;
+    }
+    .promo .promoCover {
+        height: 100%;
+    }
+    .promo .promoCover .itemsWrap {
+        height: 140px;
+    }
+    .promo .promoCover .itemsWrap h1 {
+        font-size: 1em;
+    }
+    .promo .promoCover .itemsWrap p {
+        font-size: 0.6em;
+    }
+    .promo .promoCover .itemsWrap button {
+        width: 120px;
+        height: 30px;
+        font-size: 0.8em;
+    }
+    main .howToConnect .cartWrap .cart button {
+        margin: 60px 0 0 0;
+    }
+}
+
+/*-------I Pad <= 767px-------*/
+@media (max-width: 767px) {
+    
+}
+
+/*-------I Pad <= 768px-------*/
+@media (max-width: 768px) {
+    .promo .promoCover .itemsWrap {
+        margin: 10px 0 0 0;
+    }
+}
+
+/*-------I Pad <= 768px-------*/
+@media (min-width: 768px) {
+    main .about {
+        margin: 30px 0 0 0;
+    }
+    .promo {
+        height: 100%;
+    }
+    .promo .promoCover {
+        height: 100%;
+    }
+    .promo .promoCover .itemsWrap {
+        height: 300px;
+    }
+    nav .logReqWrap {
+        width: 400px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav .logReqWrap span {
+        margin: 0 30px 0 0;
+    }
+    nav .logReqWrap button {
+        margin: 0 10px 0 0;
+    }
+}
+
+/*-------Some brakepoint-------*/
+@media (min-width: 321px) {
+    main .price .priceItemsWrap .row3 {
+        margin: 160px 0 0 0;
+    } 
+}
+
+/*-------Some brakepoint-------*/
+@media (min-width: 386px) {
+    main .price .priceItemsWrap .row3 {
+        margin: 60px 0 0 0;
+    } 
+}
+
+/*----I Pad Pro------*/
+@media (max-width: 1025px) {
+    main .info .col2 p {
+        width: 99%;
+    }
+}

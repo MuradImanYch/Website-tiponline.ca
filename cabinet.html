@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet</title>
+    <link rel="stylesheet" href="styles/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="styles/cabinet.css" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mobNavWrap">
+                <ul class="mobUl">
+                    <a href="/?path=about"><li>About us</li></a>
+                    <a href="/?path=howItWorks"><li>How it works</li></a>
+                    <a href="/?path=prices"><li>Prices</li></a>
+                    <a href="/?path=howToIntegrate"><li>How to integrate</li></a>
+                    <a href="/?path=reviews"><li>Reviews</li></a>
+                    <a href="/?path=faq"><li>FAQ</li></a>
+                </ul>
+            </div>
+            <div class="logoWrap"><a href="/"><img src="img/logo.svg" alt=""><span>tiponline</span></a></div>
+            <ul class="descUl">
+                <a href="/?path=about"><li>About us</li></a>
+                <a href="/?path=howItWorks"><li>How it works</li></a>
+                <a href="/?path=prices"><li>Prices</li></a>
+                <a href="/?path=howToIntegrate"><li>How to integrate</li></a>
+                <a href="/?path=reviews"><li>Reviews</li></a>
+                <a href="/?path=faq"><li>FAQ</li></a>
+            </ul>
+            <div class="userBarWrap">
+                <div class="userImgName">
+                    <img src="img/userIco.svg" alt="userIco" />
+                    <span>Namenamename</span>
+                </div>
+                <div class="logoutWrap">
+                    <img src="img/logoutIco.svg" alt="logout">
+                    <span>Logout</span>
+                </div>
+            </div>
+            <div class="menuBars">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="col1">
+                <div class="navBar">
+                    <ul>
+                        <li>
+                            <svg class="active" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M27 6H5C4.44772 6 4 6.44772 4 7V25C4 25.5523 4.44772 26 5 26H27C27.5523 26 28 25.5523 28 25V7C28 6.44772 27.5523 6 27 6Z" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M7.93555 25.9999C8.68101 24.4983 9.83088 23.2347 11.2557 22.3514C12.6804 21.468 14.3236 21 16 21C17.6764 21 19.3195 21.468 20.7443 22.3514C22.169 23.2347 23.3189 24.4983 24.0644 25.9999" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <svg class="deactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M27 6H5C4.44772 6 4 6.44772 4 7V25C4 25.5523 4.44772 26 5 26H27C27.5523 26 28 25.5523 28 25V7C28 6.44772 27.5523 6 27 6Z" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M7.93555 25.9999C8.68101 24.4983 9.83088 23.2347 11.2557 22.3514C12.6804 21.468 14.3236 21 16 21C17.6764 21 19.3195 21.468 20.7443 22.3514C22.169 23.2347 23.3189 24.4983 24.0644 25.9999" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>Information</li>
+                        <li>
+                            <svg class="active" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 20C14.5899 20 17.5 17.0899 17.5 13.5C17.5 9.91015 14.5899 7 11 7C7.41015 7 4.5 9.91015 4.5 13.5C4.5 17.0899 7.41015 20 11 20Z" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M19.4265 7.24215C20.3205 6.99026 21.2582 6.93287 22.1762 7.07386C23.0943 7.21486 23.9715 7.55095 24.7487 8.0595C25.526 8.56805 26.1852 9.23726 26.682 10.022C27.1789 10.8068 27.5018 11.689 27.629 12.6091C27.7562 13.5291 27.6847 14.4658 27.4194 15.3559C27.1541 16.2461 26.7012 17.069 26.0911 17.7694C25.481 18.4697 24.7278 19.0312 23.8825 19.416C23.0371 19.8008 22.119 19.9999 21.1902 20" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M2 24.6746C3.01511 23.2306 4.36275 22.052 5.92915 21.2384C7.49556 20.4248 9.23473 20.0001 10.9998 20C12.7649 19.9999 14.5041 20.4246 16.0706 21.238C17.637 22.0515 18.9848 23.23 20 24.6739" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21.1902 20C22.9555 19.9987 24.6951 20.4228 26.2617 21.2364C27.8284 22.05 29.1759 23.2291 30.1902 24.6739" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <svg class="deactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 20C14.5899 20 17.5 17.0899 17.5 13.5C17.5 9.91015 14.5899 7 11 7C7.41015 7 4.5 9.91015 4.5 13.5C4.5 17.0899 7.41015 20 11 20Z" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M19.4265 7.24215C20.3205 6.99026 21.2582 6.93287 22.1762 7.07386C23.0943 7.21486 23.9715 7.55095 24.7487 8.0595C25.526 8.56805 26.1852 9.23726 26.682 10.022C27.1789 10.8068 27.5018 11.689 27.629 12.6091C27.7562 13.5291 27.6847 14.4658 27.4194 15.3559C27.1541 16.2461 26.7012 17.069 26.0911 17.7694C25.481 18.4697 24.7278 19.0312 23.8825 19.416C23.0371 19.8008 22.119 19.9999 21.1902 20" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M2 24.6746C3.01511 23.2306 4.36275 22.052 5.92915 21.2384C7.49556 20.4248 9.23473 20.0001 10.9998 20C12.7649 19.9999 14.5041 20.4246 16.0706 21.238C17.637 22.0515 18.9848 23.23 20 24.6739" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21.1902 20C22.9555 19.9987 24.6951 20.4228 26.2617 21.2364C27.8284 22.05 29.1759 23.2291 30.1902 24.6739" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>Workers</li>
+                        <li>
+                            <svg class="active" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 22L16 29L28 22" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M4 16L16 23L28 16" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M4 10L16 17L28 10L16 3L4 10Z" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <svg class="deactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 22L16 29L28 22" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M4 16L16 23L28 16" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M4 10L16 17L28 10L16 3L4 10Z" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>Tarifs</li>
+                        <li>
+                            <svg class="active" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 19C23.1797 19 29 16.3137 29 13C29 9.68629 23.1797 7 16 7C8.8203 7 3 9.68629 3 13C3 16.3137 8.8203 19 16 19Z" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 19V25" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 13V19C3 22 8 25 16 25C24 25 29 22 29 19V13" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M24 17.7632V23.7633" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M8 17.7632V23.7632" stroke="#3B97F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <svg class="deactive" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 19C23.1797 19 29 16.3137 29 13C29 9.68629 23.1797 7 16 7C8.8203 7 3 9.68629 3 13C3 16.3137 8.8203 19 16 19Z" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 19V25" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 13V19C3 22 8 25 16 25C24 25 29 22 29 19V13" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M24 17.7632V23.7633" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M8 17.7632V23.7632" stroke="#B3D9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>Balance</li>
+                    </ul>
+                </div>
+                <div class="refLinkWrap">
+                    <div class="title">
+                        <p>Your referral link for inviting friends</p>
+                        <div class="refLinkChild">
+                            <input type="text" value="https://tiponline.ca?refererUID=16" />
+                            <img src="img/shareIco.svg" alt="share">
+                        </div>
+                    </div>
+                    <div class="bonusLinkWrap">
+                        <p>Get bonus for inviting friends
+                        </p>
+                        <ul>
+                            <li><a href="">Lorem ipsum dolor sit amet</a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet</a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="service">
+                    <div class="switchBtnWrap">
+                        <button>Business services</button>
+                        <button>Personal services</button>
+                    </div>
+                    <div class="container">
+                        <div class="tarifs">
+                            <div class="individualWrap">
+                                <div class="individualWrapUpd">
+                                    <div class="col1">
+                                        <div class="per10">
+                                            <p>Individual</p>
+                                            <p>10%</p>
+                                        </div>
+                                        <p id="depText">from deposit</p>
+                                        <p>$5 & under is 7.99%+$0.3</p>
+                                    </div>
+                                    <div class="col2">
+                                        <ul>
+                                            <li>Unlimited transactions</li>
+                                            <li>No hidden fees</li>
+                                            <li>No time and amount limits for withdraws</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="col3">
+                                    <button>Active</button>
+                                </div>
+                            </div>
+                            <div class="integration">
+                                <h3>Select integration</h3>
+                                <div class="integrationChild">
+                                    <div class="itemCol1">
+                                        <div class="item">
+                                            <div class="itemChild">
+                                                <div class="img">
+                                                    <img src="img/qr.svg" alt="img">
+                                                </div>
+                                                <div class="right">
+                                                    <p>QR code</p>
+                                                    <button>Create</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="itemChild">
+                                                <div class="img">
+                                                    <img src="img/cart3.svg" alt="img">
+                                                </div>
+                                                <div class="right">
+                                                    <p>Widget for your site</p>
+                                                    <button>Create</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itemCol2">
+                                        <div class="item">
+                                            <div class="itemChild">
+                                                <div class="img">
+                                                    <img src="img/cart1.svg" alt="img">
+                                                </div>
+                                                <div class="right">
+                                                    <p>Connect with API </p>
+                                                    <button>Create</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="information">
+                            <div class="forms">
+                                <div class="col">
+                                    <div class="inputWrap">
+                                        <div class="input">
+                                            <label for="companyName">Company name <span>*</span></label>
+                                            <input name="companyName" id="companyName" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="inputWrap"> 
+                                        <div class="input">
+                                            <label for="typeOfCompany">Type of company <span>*</span></label>
+                                            <input type="text" id="typeOfCompany" name="typeOfCompany" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputWrap">
+                                        <div class="input">
+                                            <label for="name">Name <span>*</span></label>
+                                            <input name="name" id="name" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="inputWrap"> 
+                                        <div class="input">
+                                            <label for="lName">Last name <span>*</span></label>
+                                            <input name="lName" id="lName" type="text" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputWrap">
+                                        <div class="input">
+                                            <label for="birthDate">Date of birth <span>*</span></label>
+                                            <input name="birthDate" id="birthDate" type="date" />
+                                        </div>
+                                    </div>
+                                    <div class="inputWrap"> 
+                                        <div class="input">
+                                            <label for="state">State <span>*</span></label>
+                                            <select id="state" name="state">
+                                                <option selected disabled hidden value="none"></option>
+                                                <option value="Alberta">Alberta</option>
+                                                <option value="British Columbia">British Columbia</option>
+                                                <option value="Manitoba">Manitoba</option>
+                                                <option value="New Brunswick">New Brunswick</option>
+                                                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                                <option value="Northwest Territories">Northwest Territories</option>
+                                                <option value="Nova Scotia">Nova Scotia</option>
+                                                <option value="Nunavut">Nunavut</option>
+                                                <option value="Ontario">Ontario</option>
+                                                <option value="Prince Edward Island">Prince Edward Island</option>
+                                                <option value="Quebec">Quebec</option>
+                                                <option value="Saskatchewan">Saskatchewan</option>
+                                                <option value="Yukon">Yukon</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputWrap">
+                                        <div class="input">
+                                            <label for="city">City <span>*</span></label>
+                                            <input name="city" id="city" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="inputWrap"> 
+                                        <div class="input">
+                                            <label for="street">Street <span>*</span></label>
+                                            <input name="street" id="street" type="text" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputWrap">
+                                        <div class="input">
+                                            <label for="houseNum">House number <span>*</span></label>
+                                            <input name="houseNum" id="houseNum" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="inputWrap"> 
+                                        <div class="input">
+                                            <label for="postalCode">Postal code <span>*</span></label>
+                                            <input name="postalCode" id="postalCode" type="text" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputWrap">
+                                        <div class="input">
+                                            <label for="email">E-mail <span>*</span></label>
+                                            <input name="email" id="email" type="email" />
+                                        </div>
+                                    </div>
+                                    <div class="inputWrap"> 
+                                        <div class="input">
+                                            <label for="phone">Phone <span>*</span></label>
+                                            <input name="phone" id="phone" type="phone" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="leftWrap">
+                                        <div class="inputWrap"> 
+                                            <h4>Payout method info</h4>
+                                            <div class="input">
+                                                <label for="cardNum">Card number</label>
+                                                <input name="cardNum" id="cardNum" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="inputWrap"> 
+                                            <div class="input">
+                                                <label for="cardHolder">Card holder name</label>
+                                                <input name="cardHolder" id="cardHolder" type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rightWrap">
+                                        <div class="inputWrap"> 
+                                            <h4>Bank information</h4>
+                                            <div class="input">
+                                                <label for="transitNum">Branch transit number <span>*</span></label>
+                                                <input name="transitNum" id="transitNum" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="inputWrap"> 
+                                            <div class="input">
+                                                <label for="InstitutionNum">Institution number <span>*</span></label>
+                                                <input name="InstitutionNum" id="InstitutionNum" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="inputWrap"> 
+                                            <div class="input">
+                                                <label for="bankNum">Bank account number <span>*</span></label>
+                                                <input name="bankNum" id="bankNum" type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notice"><p><span>*</span> - required fields. Please leave your correct personal and bank information for payouts. It is a bank requirement.</p></div>
+                            <div class="saveBtnWrap">
+                                <button>Save</button>
+                            </div>
+                        </div>
+                        <div class="workers">
+                            <div class="addBtnWrap">
+                                <div class="addBtnChildWrap">
+                                    <svg data-toggle="modal" data-target="#modal-4" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.0887 24.5534C19.7828 24.5534 24.3988 19.9374 24.3988 14.2432C24.3988 8.54911 19.7828 3.93311 14.0887 3.93311C8.39457 3.93311 3.77856 8.54911 3.77856 14.2432C3.77856 19.9374 8.39457 24.5534 14.0887 24.5534Z" stroke="#3B97F4" stroke-width="2.57753" stroke-miterlimit="10"></path>
+                                        <path d="M9.79272 14.2437H18.3845" stroke="#3B97F4" stroke-width="2.57753" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M14.0886 9.94775V18.5395" stroke="#3B97F4" stroke-width="2.57753" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                    <span>Add</span>
+                                </div>
+                            </div>
+                            <div class="employeesList">
+                                <p>Name</p>
+                                <div class="info">
+                                    <span class="moneyCount">0<span class="dollarSymb">$</span></span>
+                                    <div class="editDel">
+                                        <img src="img/edit.svg" alt="edit">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.0881 6.41504L4.92603 6.41504" stroke="#F29FA3" stroke-width="1.83291" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M10.4253 2.74951H19.5898" stroke="#F29FA3" stroke-width="1.83291" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M23.2557 6.41504V23.8277C23.2557 24.0708 23.1592 24.3039 22.9873 24.4757C22.8154 24.6476 22.5823 24.7442 22.3393 24.7442H7.67598C7.43292 24.7442 7.19981 24.6476 7.02795 24.4757C6.85608 24.3039 6.75952 24.0708 6.75952 23.8277V6.41504" stroke="#F29FA3" stroke-width="1.83291" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p>Earned</p>
+                            </div>
+                        </div>
+                        <div class="balance">
+                            <div class="balanceContainer">
+                                <div class="balanceCount">
+                                    <span class="moneyCount">0<span class="dollarSymb">$</span>
+                                    <p>Balance</p>
+                                </div>
+                                <div class="btnWrap">
+                                    <button>Make tip</button>
+                                    <a href="charge.html"><button>Top up</button></a>
+                                    <button>Get now</button>
+                                </div>
+                            </div>
+                            <div class="hystory">
+                                <div class="item">
+                                    <div class="leftSide"><span class="arrow">↓
+                                    </span><p class="moneyCount">0<span class="dollarSymb">$</span></p></div>
+                                    <div class="rightSide">
+                                        <div class="date">2021-08-19 14:00:13</div>
+                                    </div>
+                                </div>
+                                <div class="itemComment"><p>Comment: Cashback from transaction</p></div>
+                                <div class="item">
+                                    <div class="leftSide"><span class="arrow">↓
+                                    </span><p class="moneyCount">0<span class="dollarSymb">$</span></p></div>
+                                    <div class="rightSide">
+                                        <div class="date">2021-08-19 14:00:13</div>
+                                    </div>
+                                </div>
+                                <div class="itemComment"><p>Comment: Sent tip for account ER-2</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footerUpd">
+                <div class="col1">
+                    <div class="logoWrap"><img src="img/logo.svg" alt=""><a href="/"><span>tiponline</span></a></div>
+                    <div class="socNetWrap"><img src="img/fb.svg" alt="fb"><img src="img/inst.svg" alt="instagram"></div>
+                </div>
+                <div class="col2">
+                    <ul>
+                        <a href="/?path=about"><li>About us</li></a>
+                        <a href="/?path=howItWorks"><li>How it works</li></a>
+                        <a href="/?path=prices"><li>Prices</li></a>
+                        <a href="/?path=howToIntegrate"><li>How to integrate</li></a>
+                        <a href="/?path=reviews"><li>Reviews</li></a>
+                        <a href="/?path=faq"><li>FAQ</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col3">
+                <a href="/terms.html">Privacy Policy</a>
+                <div class="mailWrap"><img src="img/envelope.svg" alt="envelope"><span>support@tiponline.ca</span></div>    
+            </div>
+        </div>
+    </footer>
+    <div class="addWorkerPopupWrap">
+        <div class="addWorkerContent">
+            <button class="closeBtn">×</button>
+            <p>Add worker</p>
+            <div class="formWrap">
+                <form action="">
+                    <label for="name">Full name</label>
+                    <input id="name" required name="name" type="text" />
+                    <label for="phone">Phone number</label>
+                    <input id="phone" required name="phone" type="phone" />
+                    <label for="email">Email</label>
+                    <input id="email" required name="email" type="email" />
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="addWorkerPopupWrap">
+        <div class="addWorkerContent">
+            <button class="closeBtn">×</button>
+            <p>Add worker</p>
+            <div class="formWrap">
+                <form action="">
+                    <label for="name">Full name</label>
+                    <input id="name" required name="name" type="text" />
+                    <label for="phone">Phone number</label>
+                    <input id="phone" required name="phone" type="phone" />
+                    <label for="email">Email</label>
+                    <input id="email" required name="email" type="email" />
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="sendMoneyPopupWrap">
+        <div class="sendMoneyContent">
+            <button class="closeBtn">×</button>
+            <p>Send money</p>
+            <div class="formWrap">
+                <form action="">
+                    <label for="accId">Account ID:</label>
+                    <input id="accId" required name="accId" type="text" />
+                    <button class="scanQrBtn">Scan QR</button>
+                    <label for="amount">Amount:</label>
+                    <input id="amount" required name="amount" type="phone" />
+                    <button>Transfer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="workersEditPopupWrap">
+        <div class="workersEditContent">
+            <button class="closeBtn">×</button>
+            <p>Edit worker</p>
+            <div class="formWrap">
+                <form action="">
+                    <label for="fname">Full name</label>
+                    <input id="fname" required name="fname" type="text" />
+                    <label for="number">Phone number</label>
+                    <input id="number" required name="number" type="phone" />
+                    <label for="email-">Email</label>
+                    <input id="email-" required name="email-" type="email" />
+                    <button>Edit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="scripts/cabinet.js"></script>
+</body>
+</html>
